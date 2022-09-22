@@ -1,0 +1,23 @@
+query Profile @context(scope: "private") {
+  profile {
+    cacheId
+    addresses {
+      id
+      addressName
+      country
+      state
+      city
+      postalCode
+      neighborhood
+      street
+      number
+      geoCoordinates
+      complement
+    }
+    firstName
+    lastName
+    email
+    document
+    homePhone
+  }
+}

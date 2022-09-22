@@ -1,0 +1,6 @@
+mutation updateSelectedAddress($address: AddressInput!) {
+  estimateShipping(address: $address)
+    @context(provider: "vtex.checkout-graphql") {
+    id
+  }
+}

@@ -1,0 +1,8 @@
+mutation UPDATE_PROFILE_DATA($orderFormId:ID, $input:UserProfileInput!){
+  updateOrderFormProfile(orderFormId:$orderFormId, input:$input) 
+  @context(provider: "vtex.checkout-graphql") {
+    clientProfileData {
+      email
+    }
+  }
+}
