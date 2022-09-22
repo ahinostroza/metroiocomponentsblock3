@@ -1,0 +1,62 @@
+{
+  "donation": {
+    "component": "Donation"
+  },
+  "page-breadcrumb": {
+    "component": "Breadcrumb"
+  },
+  "page-title": {
+    "component": "Pagetitle"
+  },
+  "page-ventas": {
+    "component": "Pageventas"
+  },
+  "page-menulateral": {
+    "component": "Menulateral"
+  },
+  "menuaccordion": {
+    "component": "Menuplaced"
+  },
+  "menuaccordion#2": {
+    "component": "Menuplaced"
+  },
+  "page-content": {
+    "component": "Pagecontent"
+  },
+  "hover-vitrinas": {
+    "component": "HoverVitrinas"
+  },
+  "remove-percentage": {
+    "component": "RemovePercentage"
+  },
+  "qtyInCart": {
+    "component": "QuantityInCart"
+  },
+  "mcPricekg": {
+    "component": "MiniCartPricePerUnit"
+  },
+  "itemsInCart": {
+    "component": "itemsInCart"
+  },
+  "redirect-home": {
+    "component": "HomeRedirect"
+  },
+  "modal-download-app": {
+    "component": "ModalDownloadApp"
+  },
+  "click-institucionales": {
+    "component": "ClickInstitucionales"
+  },
+  "click-plpevents": {
+    "component": "ClickAddToCartButton"
+  },
+  "popup-prime": {
+    "component": "PopupPrime"
+  },
+  "logo-prime-header": {
+    "component": "LogoPrime"
+  },
+  "topbar-prime": {
+    "component": "TopbarPrime"
+  }
+}

@@ -15,7 +15,7 @@ itemsInCart
 HomeRedirect
 ModalDownloadApp
 ClickInstitucionales
+ClickAddToCartButton
 PopupPrime
 LogoPrime
 TopbarPrime
-DidYouMainTitleResult

@@ -1,0 +1,10 @@
+query orderForm {
+  orderForm @context(provider: "vtex.checkout-graphql") {
+    shipping {
+      selectedAddress {
+        street
+        number
+      }
+    }
+  }
+}
