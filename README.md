@@ -1,0 +1,21 @@
+# MetroioComponentsblock3
+
+Donation
+Breadcrumb
+Pagetitle
+Pageventas
+Menulateral
+Menuplaced
+Pagecontent
+HoverVitrinas
+RemovePercentage
+QuantityInCart
+MiniCartPricePerUnit
+itemsInCart
+HomeRedirect
+ModalDownloadApp
+ClickInstitucionales
+ClickAddToCartButton
+PopupPrime
+LogoPrime
+TopbarPrime

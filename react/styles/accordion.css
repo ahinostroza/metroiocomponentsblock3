@@ -1,0 +1,77 @@
+.title {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #191919;
+  margin-top: 0px;
+}
+.button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #191919;
+  padding:0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  height: 90px;
+  max-height: 90px;
+}
+.button::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 40%;
+  border: solid #fff200;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.button[aria-expanded='true']::after {
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in-out;
+}
+.accordion__panel {
+  transition: all 0.3s ease-in-out;
+}
+.accordion__panel[hidden] {
+  transition: all 0.3s ease-in-out;
+}
+.text {
+  padding: 20px 0px;
+  color: #868686;
+}
+.container {
+  max-width: 70%;
+  display: flex;
+  flex-flow: wrap;
+}
+.container :glopbal(.accordion__item){
+  width: 50%;
+  display: inline-block;
+}
+@media (max-width: 890px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .subItem{
+    width: 100%;
+  }
+}
+.accordion__panel {
+  text-align: left;
+}

@@ -1,0 +1,11 @@
+.conteudo-web-inst a, .conteudo-web-inst p, .conteudo-web-inst span{
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}

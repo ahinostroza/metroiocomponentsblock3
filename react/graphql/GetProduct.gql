@@ -1,0 +1,13 @@
+query product($identifier: ProductUniqueIdentifier!) {
+  product(
+    identifier: $identifier
+    ) @context(provider: "vtex.store-graphql") {
+      productId
+      items {
+      productSpecifications {
+        fieldName
+        fieldValues
+      }
+    }
+  }
+}
