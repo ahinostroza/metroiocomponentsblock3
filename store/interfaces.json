@@ -58,5 +58,8 @@
   },
   "topbar-prime": {
     "component": "TopbarPrime"
+  },
+  "did-you-mein-title": {
+    "component": "DidYouMainTitleResult"
   }
 }
