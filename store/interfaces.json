@@ -59,16 +59,16 @@
   "did-you-mein-title": {
     "component": "DidYouMainTitleResult"
   },
-  "sale-flags-plp-right":{
+  "sale-flags-plp-right": {
     "component": "SaleFlagPlpRight"
   },
-  "sale-flags-plp-left":{
+  "sale-flags-plp-left": {
     "component": "SaleFlagPlpLeft"
   },
-  "sale-flags-pdp-left":{
+  "sale-flags-pdp-left": {
     "component": "SaleFlagPdpLeft"
   },
-  "sale-flags-pdp-right":{
+  "sale-flags-pdp-right": {
     "component": "SaleFlagPdpRight"
   }
 }
