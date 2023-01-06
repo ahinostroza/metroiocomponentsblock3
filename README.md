@@ -1,5 +1,6 @@
 # MetroioComponentsblock3
 
+DidYouMain
 Donation
 Breadcrumb
 Pagetitle
@@ -12,10 +13,10 @@ RemovePercentage
 QuantityInCart
 MiniCartPricePerUnit
 itemsInCart
-HomeRedirect
 ModalDownloadApp
 ClickInstitucionales
 ClickAddToCartButton
 PopupPrime
 LogoPrime
 TopbarPrime
+SaleTags

@@ -38,9 +38,6 @@
   "itemsInCart": {
     "component": "itemsInCart"
   },
-  "redirect-home": {
-    "component": "HomeRedirect"
-  },
   "modal-download-app": {
     "component": "ModalDownloadApp"
   },
@@ -53,10 +50,25 @@
   "popup-prime": {
     "component": "PopupPrime"
   },
+  "topbar-prime": {
+    "component": "TopbarPrime"
+  },
   "logo-prime-header": {
     "component": "LogoPrime"
   },
-  "topbar-prime": {
-    "component": "TopbarPrime"
+  "did-you-mein-title": {
+    "component": "DidYouMainTitleResult"
+  },
+  "sale-flags-plp-right": {
+    "component": "SaleFlagPlpRight"
+  },
+  "sale-flags-plp-left": {
+    "component": "SaleFlagPlpLeft"
+  },
+  "sale-flags-pdp-left": {
+    "component": "SaleFlagPdpLeft"
+  },
+  "sale-flags-pdp-right": {
+    "component": "SaleFlagPdpRight"
   }
 }
