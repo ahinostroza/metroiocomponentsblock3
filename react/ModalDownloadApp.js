@@ -55,7 +55,6 @@ const ModalApp = () => {
                                     )
 
                             }
-
                             <button className={handles.modalButton} onClick={closeButton}>
                                 X
                             </button>

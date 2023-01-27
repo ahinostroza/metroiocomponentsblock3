@@ -4,50 +4,48 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-console */
 /* eslint-disable react/jsx-filename-extension */
-
-import React from 'react'
+import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import { useRuntime } from 'vtex.render-runtime'
-
 import style from './styles/arrow.css'
 
 function Menulateral(PropsValues) {
   const runtime = useRuntime()
   const linksReturn = PropsValues.content
-
   if (PropsValues.content) {
     const app = () => (
       <>
         <Nav>
           <Title>Nosotros</Title>
           <Content>
-            {linksReturn.map((e,i) => (
-              <Item key={i}>
-              {e.text === runtime.route.title ? (
-                <Link
-                  key={Math.floor(Math.random(100 * 32))}
-                  className={style.active}
-                  href={e.url}
-                >
-                  {e.text}
-                </Link>
-              ) : (
-                <Link href={e.url}>{e.text}</Link>
-              )}
-              <span className={`${style.arrow} ${style.right}`} />
-            </Item>
-            ))}
+            {linksReturn.map((e, i) => {
+              if (e.__editorItemTitle === runtime.route.title && e.isActive) {
+                return (
+                  <Item key={i}>
+                    <Link
+                      key={Math.floor(Math.random(100 * 32))}
+                      className={style.active}
+                      href={e.url}
+                    >
+                      {e.__editorItemTitle}
+                    </Link>
+                    <span className={`${style.arrow} ${style.right}`} />
+                  </Item>
+                )
+              } else if (e.isActive) {
+                return <Link href={e.url}>{e.__editorItemTitle}</Link>
+              }
+              return <Fragment />
+            })
+            }
           </Content>
         </Nav>
       </>
     )
-
     return <>{app()}</>
   }
-
   return <></>
 }
-
 Menulateral.schema = {
   title: 'Links - Menú lateral',
   description: 'Links',
@@ -63,7 +61,12 @@ Menulateral.schema = {
         title: 'Items',
         type: 'object',
         properties: {
-          text: {
+          isActive: {
+            title: 'Activar/Desactivar bloque',
+            type: 'boolean',
+            default: true,
+          },
+          __editorItemTitle: {
             title: 'Texto',
             type: 'string',
             default: '',
@@ -78,7 +81,6 @@ Menulateral.schema = {
     },
   },
 }
-
 const Link = styled.a`
   font-family: Work Sans;
   font-style: normal;
@@ -96,7 +98,6 @@ const Link = styled.a`
     text-align: center;
   }
 `
-
 const Item = styled.li`
   display: flex;
   align-items: center;
@@ -112,7 +113,6 @@ const Item = styled.li`
     justify-content: center;
   }
 `
-
 const Content = styled.ul`
   list-style: none;
   margin: 0;
@@ -125,7 +125,6 @@ const Content = styled.ul`
     justify-content: center;
   }
 `
-
 const Title = styled.h3`
   font-family: Work Sans;
   font-style: normal;
@@ -137,9 +136,7 @@ const Title = styled.h3`
     text-align: center;
   }
 `
-
 const Nav = styled.nav`
   margin: 0 0 30px 0;
 `
-
 export default Menulateral
