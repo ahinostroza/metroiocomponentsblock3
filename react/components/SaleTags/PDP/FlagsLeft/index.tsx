@@ -57,9 +57,10 @@ const PdpFlagsLeft=()=>{
                 const Higlight=cluster.name
                 const escala=getScala(Higlight)
                 const fitt=getFit(Higlight)
-                if(Higlight.includes('TagColl')&&getPositionLeft(Higlight)){
-                    if(getWidth()>960){
+                if (Higlight.includes('TagColl')&&getPositionLeft(Higlight)) {
+                    if (getWidth()>960) {
                         return(<img 
+                            key={cluster.name}
                             style={{
                                 aspectRatio:escala,
                                 width:'100%',
@@ -72,8 +73,9 @@ const PdpFlagsLeft=()=>{
                             src={`/arquivos/${getImage(Higlight)}`}
                             loading="lazy"
                         />)
-                    }else{
+                    } else {
                         return(<img 
+                            key={cluster.name}
                             style={{
                                 aspectRatio:escala,
                                 width:'100%',
@@ -88,8 +90,8 @@ const PdpFlagsLeft=()=>{
                             loading="lazy"
                         />)
                     }
-                }else{
-                    return(<></>)
+                } else {
+                    return('')
                 } 
             })
         }
