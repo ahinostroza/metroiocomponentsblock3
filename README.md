@@ -1,22 +1,21 @@
 # MetroioComponentsblock3
 
-DidYouMain
-Donation
+Componentes bloque 3
+
 Breadcrumb
-Pagetitle
-Pageventas
+ClickInstitucionales
+DidYouMainTitleResult
+Donation
+HoverVitrinas
+itemsInCart
 Menulateral
 Menuplaced
-Pagecontent
-HoverVitrinas
-RemovePercentage
-QuantityInCart
 MiniCartPricePerUnit
-itemsInCart
 ModalDownloadApp
-ClickInstitucionales
-ClickAddToCartButton
+Pagecontent
+Pagetitle
+Pageventas
 PopupPrime
-LogoPrime
-TopbarPrime
+QuantityInCart
+RemovePercentage
 SaleTags

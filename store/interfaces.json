@@ -70,5 +70,11 @@
   },
   "sale-flags-pdp-right": {
     "component": "SaleFlagPdpRight"
+  },
+  "description-info": {
+    "component": "DescriptionInfo"
+  },
+  "optimize": {
+    "component": "Optimize"
   }
 }

@@ -39,6 +39,7 @@ function Breadcrumb() {
       </List>
     </>
   )
+
   return <>{app()}</>
 
 }
@@ -62,11 +63,6 @@ const ListItem = styled.li`
   &::after {
     content: "|";
     margin: 0 8px;
-  }
-  &:last-child {
-    a {
-      color: #EC1C24;
-    }
   }
   &:last-child::after {
     display: none;

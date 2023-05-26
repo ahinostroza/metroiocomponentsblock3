@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 const ClickInstitucionales = () => {
     useEffect(() => {
-        if (window.location.path == '/consultas-y-sugerencias') {
+        if (window.location.path === '/consultas-y-sugerencias') {
             if (localStorage.getItem('isTelephone')) {
                 window.scrollTo(0, 1400)
                 storage.removeItem('isTelephone');
