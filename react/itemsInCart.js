@@ -1,9 +1,9 @@
 import React from 'react'
-import { useEffect, useState } from 'react';
-import { OrderForm } from 'vtex.order-manager';
-import { useProduct, useProductDispatch } from 'vtex.product-context'
+import { OrderForm } from 'vtex.order-manager'
 import { useCssHandles } from 'vtex.css-handles'
-import axios from "axios";
+//import { useEffect, useState } from 'react';
+//import { useProduct, useProductDispatch } from 'vtex.product-context'
+//import axios from "axios";
 
 const { useOrderForm } = OrderForm
 const CSS_HANDLES = [
@@ -15,28 +15,40 @@ const CSS_HANDLES = [
 
 function itemsInCart() {
     const { handles } = useCssHandles(CSS_HANDLES)
-
     const { orderForm } = useOrderForm()
-    const productContextValue = useProduct()
+
     const orderformInfo = orderForm
-    // let productId = productContextValue?.product?.productId
-    let cantproductos = orderformInfo.items.length
+
+    const itemsID = [];
+    const filterArray = () => {
+      let findId = orderformInfo.items.filter((itemId) => {
+          const duplicateID = itemsID.includes(itemId.productId);
+          if (!duplicateID) {
+            itemsID.push(itemId.productId);
+            return true;
+          }
+          return false
+      })
+      return findId
+    }
+    const arrayProducts = filterArray()
+    const arrayLength = arrayProducts.length
     let app = () => (
         <></>
     )
-    if (cantproductos == 1) {
+    if (arrayLength == 1) {
         app = () => (
             <>
                 <div className={`${handles.itemCartContainer}`} >
-                    <span className={handles.textItems}>Tienes {cantproductos} item</span>
+                    <span className={handles.textItems}>Tienes {arrayLength} item</span>
                 </div>
             </>
         )
-    } else if (cantproductos > 1) {
+    } else if (arrayLength > 1) {
         app = () => (
             <>
                 <div className={`${handles.itemCartContainer}`} >
-                    <span className={handles.textItems}>Tienes {cantproductos} items</span>
+                    <span className={handles.textItems}>Tienes {arrayLength} items</span>
                 </div>
             </>
         )
