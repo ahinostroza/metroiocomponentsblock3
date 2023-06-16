@@ -1,0 +1,6 @@
+.hiddeProductGallery{
+  pointer-events: none!important;
+}
+.c-on-disabled {
+  color: #979899;
+}
