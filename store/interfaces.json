@@ -5,6 +5,9 @@
   "page-breadcrumb": {
     "component": "Breadcrumb"
   },
+  "validate-product": {
+    "component": "ValidateAvailableProduct"
+  },
   "page-title": {
     "component": "Pagetitle"
   },
