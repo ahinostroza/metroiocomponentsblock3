@@ -16,7 +16,7 @@ function Pagecontent(PropsTitle) {
       <Helmet>
         <style>{`
           .conteudo-web-inst{
-            margin: 0 0 80px 0px;
+            margin: 0 0 40px 0px;
           }
           .conteudo-web-inst a{
             color: #EC1C24;
