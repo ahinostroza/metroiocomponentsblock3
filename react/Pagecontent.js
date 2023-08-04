@@ -16,10 +16,10 @@ function Pagecontent(PropsTitle) {
       <Helmet>
         <style>{`
           .conteudo-web-inst{
-            margin: 0 0 80px 0px;
+            margin: 0 0 40px 0px;
           }
           .conteudo-web-inst a{
-            color: #fff200;
+            color: #EC1C24;
             text-decoration: none;
           }
           @media(max-width: 800px){
@@ -30,7 +30,7 @@ function Pagecontent(PropsTitle) {
         `}</style>
       </Helmet>
       <section className="conteudo-web-inst">
-        {ReactHtmlParser (PropsTitle.html)}
+        {ReactHtmlParser(PropsTitle.html)}
       </section>
     </>
   )
@@ -48,7 +48,7 @@ Pagecontent.schema = {
       type: 'string',
       default: '<p>HTML</p>',
       widget: {
-          'ui:widget': 'textarea',
+        'ui:widget': 'textarea',
       },
     },
   },

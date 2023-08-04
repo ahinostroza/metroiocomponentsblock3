@@ -11,7 +11,7 @@ function Breadcrumb() {
   const runtime = useRuntime()
 
   const breadCrumbInit = runtime.route.path.split('/')?.filter(e => e !== "")
-  
+
   const bread = []
 
   breadCrumbInit.forEach((item, i) => {
@@ -19,10 +19,10 @@ function Breadcrumb() {
     const name = item.replace(/-/g, " ")
 
     i = i + 1
-    if(i == breadCrumbInit.length){
-      bread.push({id: i, text: runtime.route.title, link: `/${item}`, last: true})
-    } else{
-      bread.push({id: i, text: name, link: `/${item}`, last: false})
+    if (i == breadCrumbInit.length) {
+      bread.push({ id: i, text: runtime.route.title, link: `/${item}`, last: true })
+    } else {
+      bread.push({ id: i, text: name, link: `/${item}`, last: false })
     }
 
   })
@@ -31,10 +31,10 @@ function Breadcrumb() {
     <>
       <List>
         {
-          runtime.account === "wongfoodqawlschv6io" ? <ListItem><ListLink href="/">Cencosud</ListLink></ListItem> : <ListItem><ListLink href="/">Cencosud</ListLink></ListItem>
+          runtime.account === "metroqaio" ? <ListItem><ListLink href="/">Metro</ListLink></ListItem> : <ListItem><ListLink href="/">Metro</ListLink></ListItem>
         }
         {
-          bread.map((e,i) => <ListItem key={i} className={e.last == true ? 'last-item' : ''} ><ListLink href={e.link}>{e.text}</ListLink></ListItem>)
+          bread.map((e, i) => <ListItem key={i} className={e.last == true ? 'last-item' : ''} ><ListLink href={e.link}>{e.text}</ListLink></ListItem>)
         }
       </List>
     </>
@@ -51,6 +51,7 @@ const List = styled.ul`
   list-style: none;
   margin: 0;
   padding: 10px 16px;
+  margin-left:12px;
 `
 
 const ListItem = styled.li`
@@ -59,15 +60,15 @@ const ListItem = styled.li`
   justify-content: felx-start;
   list-style: none;
   margin: 0px;
-  &::after{
+  &::after {
     content: "|";
-    margin: 0 18px;
+    margin: 0 8px;
   }
   &:last-child::after {
     display: none;
   }
-  &:first-child{
-    a{
+  &:first-child {
+    a {
       color: initial;
     }
   }
@@ -84,9 +85,12 @@ const ListLink = styled.a`
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.02em;
-  color: #fff200;
+  color: black;
   text-decoration: none;
   text-transform:capitalize;
+  @media (max-width:800px) {
+    font-size: 14px;
+  }
 `
 
 export default Breadcrumb

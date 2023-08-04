@@ -1,7 +1,7 @@
 {
   "vendor": "metroio",
   "name": "metroiocompo3app",
-  "version": "0.0.3",
+  "version": "0.0.9",
   "title": "Apps Metro",
   "description": "",
   "defaultLocale": "es-PE",
@@ -25,6 +25,7 @@
     "vtex.checkout-summary": "0.x",
     "vtex.store-drawer": "0.x",
     "vtex.search-graphql": "0.x",
+    "vtex.search-page-context": "0.x",
     "vtex.product-context": "0.x",
     "vtex.order-placed": "2.x",
     "vtex.css-handles": "1.x",

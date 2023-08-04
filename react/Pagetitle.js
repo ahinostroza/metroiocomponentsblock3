@@ -97,7 +97,7 @@ const Title = styled.h1`
   color: #000000;
   margin: 0;
   padding: 0px;
-  border-bottom: 1px solid #fff200;
+  border-bottom: 1px solid #ec1c24;
   position: relative;
   top: 1px;
   padding: 0 20px;
