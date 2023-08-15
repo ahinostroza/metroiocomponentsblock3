@@ -43,7 +43,7 @@ const DescriptionInfo = () => {
               }
             </style>
             <script type="text/javascript"
-              data-flix-distributor="12814"
+              data-flix-distributor="14289"
               data-flix-language="pe"
               data-flix-fallback-language="t2"
               data-flix-brand={brand}
