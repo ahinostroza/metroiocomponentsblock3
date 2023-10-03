@@ -5,6 +5,7 @@
     "test": "vtex-test-tools test"
   },
   "dependencies": {
+    "@cencosudperu/core": "^1.34.9",
     "@react-google-maps/api": "^2.4.1",
     "@types/lodash": "^4.1.6",
     "@types/string-similarity": "^4.0.0",
