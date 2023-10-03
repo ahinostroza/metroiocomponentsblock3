@@ -79,5 +79,12 @@
   },
   "optimize": {
     "component": "Optimize"
+  },
+  "my-account-page.orderLegacy": {
+    "component": "AccountPage",
+    "render": "client"
+  },
+  "order-legacy": {
+    "component": "OrderListButton"
   }
 }
