@@ -1,0 +1,110 @@
+.CAbuttom {
+  margin-top: auto;
+}
+
+.CAinverter {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.CAO1 {
+  order: 1;
+}
+
+.CAO2 {
+  order: 2;
+}
+
+.CAO3 {
+  order: 3;
+}
+
+.CAO4 {
+  order: 4;
+}
+
+.CAO1CAPB {
+  order: 1;
+  margin-top: auto;
+}
+
+.CAO2CAPB {
+  order: 2;
+  margin-top: auto;
+}
+
+.CAO3CAPB {
+  order: 3;
+  margin-top: auto;
+}
+
+.CAO4CAPB {
+  order: 4;
+  margin-top: auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--content-col-right-flags) .OCT1 {
+  margin-top: 40px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--content-col-right-flags) .OCT2 {
+  margin-top: 110px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--content-col-right-flags) .OCT3 {
+  margin-top: 110px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--content-col-right-flags-pdp) .OCT1 {
+  margin-top: 53px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--content-col-right-flags-pdp) .OCT2 {
+  margin-top: 135px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--content-col-right-flags-pdp) .OCT3 {
+  margin-top: 135px;
+}
+
+.haveTumbnail {
+  justify-content: flex-end;
+  width: 80%;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags) .tagPromo1:nth-child(1){
+  margin-top: 28px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags) .tagPromo2:nth-child(1){
+  margin-top: 48px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags) .tagPromo3:nth-child(1){
+  margin-top: 68px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags) .tagPromo0:nth-child(1){
+  margin-top: -2px;
+}
+
+@media (max-width:990px) {
+  :global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags) .tagPromo0:nth-child(1),
+  :global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags) .tagPromo1:nth-child(1),
+  :global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags) .tagPromo2:nth-child(1),
+  :global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags) .tagPromo3:nth-child(1),
+  :global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags) .tagPromo4:nth-child(1) {
+    margin-top: -20px;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags-pdp) .tagPromo1:nth-child(1),
+:global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags-pdp) .tagPromo0:nth-child(1){
+  margin-top: 0px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags-pdp) .tagPromo2:nth-child(1){
+  margin-top: 28px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags-pdp) .tagPromo3:nth-child(1){
+  margin-top: 48px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags-pdp) .tagPromo4:nth-child(1){
+  margin-top: 68px;
+}
