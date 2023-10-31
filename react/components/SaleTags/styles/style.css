@@ -93,6 +93,9 @@
   :global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags) .tagPromo4:nth-child(1) {
     margin-top: -20px;
   }
+  .havetum{
+    margin-left: 0%!important;
+  }
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags-pdp) .tagPromo1:nth-child(1),
@@ -107,4 +110,8 @@
 }
 :global(.vtex-flex-layout-0-x-flexColChild--content-col-left-flags-pdp) .tagPromo4:nth-child(1){
   margin-top: 68px;
+}
+
+.havetum{
+  margin-left: 140%;
 }
