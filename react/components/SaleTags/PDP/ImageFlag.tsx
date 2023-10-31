@@ -137,6 +137,7 @@ const ImageFlag = ({arrayFlags,position, hayOctogonos, productId,haveTumbnail,ta
   }
   const validaThumbnail=()=>{
     const element= window?.document?.querySelector(".vtex-flex-layout-0-x-flexRow--container-tags-flags-pdp .vtex-flex-layout-0-x-flexRowContent--container-tags-flags-pdp")
+    
     if(haveTumbnail&&element){
       if(!element.classList.contains(styles.haveTumbnail))
       setInterval(()=>element.classList.add(styles.haveTumbnail),1000)
@@ -158,7 +159,7 @@ const ImageFlag = ({arrayFlags,position, hayOctogonos, productId,haveTumbnail,ta
               zIndex:2,
               position: 'relative'
             }}
-            className={`${image?.className} ${tagPromo==1?styles.tagPromo1:tagPromo==2?styles.tagPromo2:tagPromo==3?styles.tagPromo3:styles.tagPromo0}`}
+            className={`${image?.className} ${tagPromo==1?styles.tagPromo1:tagPromo==2?styles.tagPromo2:tagPromo==3?styles.tagPromo3:styles.tagPromo0} ${haveTumbnail?styles.havetum:styles.nhavetum}`}
             src={image?.src}
             loading={image?.loading}
             onLoad={()=>{
